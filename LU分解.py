@@ -39,19 +39,19 @@ def LUsolver(A,b):
     x = koutai(U,b,y)
     return x
 
-# #標準入力用
-# print("input the size n")
-# n = int(input())
-# matrix = []
-# print("input the matrix A")
-# for _ in range(n):
-#     matrix.append(list(map(float,input().split())))
-# #A = np.array(matrix)
-# print(A)
-# print("input the vector B")
-# b = np.array(list(map(float,input().split())))
-# #print(b)
-# print(LUsolver(A,b))
+#標準入力用
+print("input the size n")
+n = int(input())
+matrix = []
+print("input the matrix A")
+for _ in range(n):
+    matrix.append(list(map(float,input().split())))
+#A = np.array(matrix)
+print(A)
+print("input the vector B")
+b = np.array(list(map(float,input().split())))
+#print(b)
+print(LUsolver(A,b))
 
 #サンプル連立一次方程式
 # A = np.array([[2,-2,4,2],[1,1,5,2],[3,-7,5,-4],[-3,5,-2,3]])
@@ -100,6 +100,3 @@ def LUsolver(A,b):
 # ax.set_ylabel('計算時間(秒)')
 #
 # plt.show()
-reslist = [0.01266942024230957, 0.09579942226409913,0.7445544958114624,5.929617643356323,48.44828014373779,396.53071904182434]
-for i in range(5):
-    print(reslist[i+1]/reslist[i])
